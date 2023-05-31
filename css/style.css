@@ -1,0 +1,228 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+/* 헤더 부분 */
+header {
+  background: #ddd;
+}
+/* header #header_top {
+  border: 1px solid black;
+} */
+header #header_top #header_gnb ul {
+  /* border: 1px solid black; */
+  /* width: 600px; */
+  text-align: right;
+  padding-right: 5%;
+}
+header #header_top #header_gnb ul li {
+  padding: 4px 11px;
+  line-height: 11px;
+}
+header #header_top #header_gnb ul li a {
+  color: #444;
+  font-size: 11px;
+}
+header #header_bottom {
+  /* border: 1px solid black; */
+  padding-top: 20px;
+}
+header #header_bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #header_bottom #header_lnb ul li {
+  padding: 10px 30px;
+}
+header #header_bottom #header_lnb ul li a {
+  color: #111;
+  font-size: 20px;
+  font-weight: bold;
+}
+header #header_bottom #toggle {
+  display: none;
+}
+header #header_bottom #phone {
+  display: none;
+}
+
+/* 콘텐츠 부분 */
+#contents {
+  background: #aaa;
+}
+/* 캐러셀 */
+#contents #mainimage_wrapper {
+  
+  background-color: black;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+#contents #mainimage_wrapper img{
+    width: 100%;
+}
+
+#contents #class_wrapper {
+  
+  background-color: gray;
+}
+/* 탭메뉴 */
+#contents #class_wrapper .wrapper{
+    padding: 20px 0;
+}
+#contents #class_wrapper .wrapper input{
+    display: none;
+}
+#contents #class_wrapper .wrapper input ~ div{
+    display: none;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(1):checked ~ div:nth-of-type(1){
+    display: block;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(2):checked ~ div:nth-of-type(2){
+    display: block;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(3):checked ~ div:nth-of-type(3){
+    display: block;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(4):checked ~ div:nth-of-type(4){
+    display: block;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(5):checked ~ div:nth-of-type(5){
+    display: block;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(6):checked ~ div:nth-of-type(6){
+    display: block;
+}
+/* 탭모양 구성 */
+#class_wrapper section{
+    overflow: hidden;
+    /* 자식이 float속성을 가질때 부모는 overflow 속성을 가져야함  */
+}
+#class_wrapper section label{
+    display:block; 
+    /* label은 공간이 아니므로 박스로 만듬 */
+    float: left;
+    width: 200px;height: 50px;
+    text-align:center;
+    line-height: 50px;
+    color:#555;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(1):checked ~ section>label:nth-of-type(1){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(2):checked ~ section>label:nth-of-type(2){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(3):checked ~ section>label:nth-of-type(3){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(4):checked ~ section>label:nth-of-type(4){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(5):checked ~ section>label:nth-of-type(5){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #class_wrapper .wrapper input:nth-of-type(6):checked ~ section>label:nth-of-type(6){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#class_wrapper .wrapper .class_tap_item{
+    text-align: center;
+}
+#class_wrapper .wrapper .class_tap_item img{
+    width: 24.6%;
+}
+
+
+#contents #edu_wrapper {
+  border: 1px solid blue;
+  background-color: #fff;
+}
+#contents #edu_wrapper .wrapper input{
+    display: none;
+}
+#contents #edu_wrapper .wrapper input ~ div{
+    display: none;
+}
+#contents #edu_wrapper .wrapper input:nth-of-type(1):checked ~ div:nth-of-type(1){
+    display: block;
+}
+#contents #edu_wrapper .wrapper input:nth-of-type(2):checked ~ div:nth-of-type(2){
+    display: block;
+}
+#edu_wrapper section{
+    overflow: hidden;
+    /* 자식이 float속성을 가질때 부모는 overflow 속성을 가져야함  */
+}
+#edu_wrapper section label{
+    display:block; 
+    /* label은 공간이 아니므로 박스로 만듬 */
+    float: left;
+    width: 50%;height: 50px;
+    text-align:center;
+    line-height: 50px;
+    color:#555;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+#contents #edu_wrapper .wrapper input:nth-of-type(1):checked ~ section>label:nth-of-type(1){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#contents #edu_wrapper .wrapper input:nth-of-type(2):checked ~ section>label:nth-of-type(2){
+    border-bottom: 2px solid #0d5fb6;
+    color: #0d5fb6;
+}
+#edu_wrapper .wrapper .class_tap_item_2{
+    text-align: center;
+}
+
+/* 푸터 부분 */
+footer {
+  background: #555;
+}
+
+#js_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+#js_wrapper .tap_name{
+    width: 50%;
+    text-align: center;
+    padding: 5px 0 ;
+}
+#js_wrapper .tap_img{
+    width: 100%;
+    display: none;
+}
+#js_wrapper .tap_img.active{
+    width: 100%;
+    display: block;
+}
