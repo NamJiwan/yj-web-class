@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 캐러셀 step2 제이쿼리 및 bxslider 라이브러리 및 css삽입-->
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css" />
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
@@ -29,11 +29,13 @@
       <div id="header_bottom">
         <div class="wrapper">
           <div id="toggle">
-            <img src="./images/common_but_toggle.png" alt="토글" />
+            <img src="./images/but_toggle.png" alt="토글" />
           </div>
 
           <div id="title">
-            <img src="images/yj_log.png" alt="영진직업전문학교 로고" />
+            <a href="./index.html">
+              <img src="images/yj_log.png" alt="영진직업전문학교 로고" />
+            </a>
           </div>
           <nav id="header_lnb">
             <ul>
@@ -42,7 +44,7 @@
               <li><a href="#">과정소개</a></li>
               <li><a href="#">취업센터</a></li>
               <li><a href="#">커퓨니티</a></li>
-              <li><a href="#">학교소개</a></li>
+              <li><a href="./sub.html">학교소개</a></li>
             </ul>
           </nav>
           <div id="phone">
@@ -54,115 +56,179 @@
     <div id="contents">
       <div id="mainimage_wrapper">
         <div class="image_wrapper">
-            <!-- 캐러셀 step1 레이아웃 구조 -->
-            <div class="slider">
-                <div class="mainimage"><img src="./images/mainimage01.JPG" alt=""></div>
-                <div class="mainimage"><img src="./images/mainimage02.JPG" alt=""></div>
-                <div class="mainimage"><img src="./images/mainimage03.JPG" alt=""></div>
-                <div class="mainimage"><img src="./images/mainimage04.JPG" alt=""></div>
-                <div class="mainimage"><img src="./images/mainimage05.JPG" alt=""></div>
+          <!-- 캐러셀 step1 레이아웃 구조 -->
+          <div class="slider">
+            <div class="mainimage">
+              <img src="./images/mainimage01.JPG" alt="" />
             </div>
+            <div class="mainimage">
+              <img src="./images/mainimage02.JPG" alt="" />
+            </div>
+            <div class="mainimage">
+              <img src="./images/mainimage03.JPG" alt="" />
+            </div>
+            <div class="mainimage">
+              <img src="./images/mainimage04.JPG" alt="" />
+            </div>
+            <div class="mainimage">
+              <img src="./images/mainimage05.JPG" alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <div id="class_wrapper">
-        <div class="wrapper" >
-            <input type="radio" name="class_tap" id="class_first" checked="checked" />
-            <input type="radio" name="class_tap" id="class_second" />
-            <input type="radio" name="class_tap" id="class_third" />
-            <input type="radio" name="class_tap" id="class_fourth" />
-            <input type="radio" name="class_tap" id="class_fifth" />
-            <input type="radio" name="class_tap" id="class_sixth" />
-            <section class="class_buttons">
-                <label for="class_first">전체과정</label>
-                <label for="class_second">IT/SW</label>
-                <label for="class_third">전기PLC</label>
-                <label for="class_fourth">기계설계</label>
-                <label for="class_fifth">디자인</label>
-                <label for="class_sixth">용접</label>
-            </section>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item01.png" alt="">
-                <img src="./images/class_tab_item02.png" alt="">
-                <img src="./images/class_tab_item03.png" alt="">
-                <img src="./images/class_tab_item04.png" alt="">
-                <img src="./images/class_tab_item05.png" alt="">
-                <img src="./images/class_tab_item06.png" alt="">
-                <img src="./images/class_tab_item07.png" alt="">
-                <img src="./images/class_tab_item08.png" alt="">
-                <img src="./images/class_tab_item09.png" alt="">
-            </div>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item01.png" alt="">
-                <img src="./images/class_tab_item02.png" alt="">
-            </div>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item03.png" alt="">
-                <img src="./images/class_tab_item04.png" alt="">
-            </div>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item05.png" alt="">
-            </div>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item07.png" alt="">
-                <img src="./images/class_tab_item08.png" alt="">
-            </div>
-            <div class="class_tap_item">
-                <img src="./images/class_tab_item09.png" alt="">
-            </div>
+        <div class="wrapper">
+          <input
+            type="radio"
+            name="class_tap"
+            id="class_first"
+            checked="checked"
+          />
+          <input type="radio" name="class_tap" id="class_second" />
+          <input type="radio" name="class_tap" id="class_third" />
+          <input type="radio" name="class_tap" id="class_fourth" />
+          <input type="radio" name="class_tap" id="class_fifth" />
+          <input type="radio" name="class_tap" id="class_sixth" />
+          <section class="class_buttons">
+            <label for="class_first">전체과정</label>
+            <label for="class_second">IT/SW</label>
+            <label for="class_third">전기PLC</label>
+            <label for="class_fourth">기계설계</label>
+            <label for="class_fifth">디자인</label>
+            <label for="class_sixth">용접</label>
+          </section>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item01.png" alt="" />
+            <img src="./images/class_tab_item02.png" alt="" />
+            <img src="./images/class_tab_item03.png" alt="" />
+            <img src="./images/class_tab_item04.png" alt="" />
+            <img src="./images/class_tab_item05.png" alt="" />
+            <img src="./images/class_tab_item06.png" alt="" />
+            <img src="./images/class_tab_item07.png" alt="" />
+            <img src="./images/class_tab_item08.png" alt="" />
+            <img src="./images/class_tab_item09.png" alt="" />
+          </div>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item01.png" alt="" />
+            <img src="./images/class_tab_item02.png" alt="" />
+          </div>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item03.png" alt="" />
+            <img src="./images/class_tab_item04.png" alt="" />
+          </div>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item05.png" alt="" />
+          </div>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item07.png" alt="" />
+            <img src="./images/class_tab_item08.png" alt="" />
+          </div>
+          <div class="class_tap_item">
+            <img src="./images/class_tab_item09.png" alt="" />
+          </div>
         </div>
       </div>
       <div id="edu_wrapper">
         <div class="wrapper">
-            <input type="radio" name="class_tap2" id="class_first_1" />
-            <input type="radio" name="class_tap2" id="class_second_2" />
-            <section class="class_btn">
-                <label for="class_first_1">구직자를 위한 교육</label>
-                <label for="class_second_2">직장인을 위한 교육</label>
-            </section>
-            <div class="class_tap_item_2">
-                <img src="./images/edu_tab_item01.png" alt="">
-            </div>
-            <div class="class_tap_item_2">
-                <img src="./images/edu_tab_item02.png" alt="">
-            </div>
+          <input type="radio" name="class_tap2" id="class_first_1" />
+          <input type="radio" name="class_tap2" id="class_second_2" />
+          <section class="class_btn">
+            <label for="class_first_1">구직자를 위한 교육</label>
+            <label for="class_second_2">직장인을 위한 교육</label>
+          </section>
+          <div class="class_tap_item_2">
+            <img src="./images/edu_tab_item01.png" alt="" />
+          </div>
+          <div class="class_tap_item_2">
+            <img src="./images/edu_tab_item02.png" alt="" />
+          </div>
         </div>
       </div>
       <div id="js_wrapper">
         <div class="tap_name">구직자를 위한 교육</div>
         <div class="tap_name">직장인을 위한 교육</div>
         <div class="tap_img">
-            <img src="./images/edu_tab_item01.png" alt="">
+          <img src="./images/edu_tab_item01.png" alt="" />
         </div>
         <div class="tap_img">
-            <img src="./images/edu_tab_item02.png" alt="">
+          <img src="./images/edu_tab_item02.png" alt="" />
         </div>
       </div>
     </div>
     <footer>
-      <div class="wrapper">푸터</div>
+      <div class="wrapper">
+        <div id="footer_top">
+          <ul>
+            <li>개인정보보호정책</li>
+            <li>메일주소무단수집거부</li>
+          </ul>
+        </div>
+        <div id="footer_mid">
+          <span>회사명 : <em>영진직업전문학교</em></span>
+          <span
+            >대표자 : <em>곽승호, 차영숙 </em
+            ><img src="./images/footer_email.png" alt=""
+          /></span>
+          <span>Tel : <em>053-983-8877</em></span>
+          <span>Fax : <em>053-722-2423</em></span>
+          <span
+            >개인정보보호책임자 :
+            <em>이동석 <img src="./images/footer_email.png" alt="" /></em
+          ></span>
+          <span>Tel : <em>053-983-8877</em></span>
+          <span>사업자번호 : <em>502-95-07029</em></span>
+          <address>
+            701-835 대구광역시 동구 화랑로 525(용계동), 조경실습장 : 대구 동구
+            도동 806-21
+          </address>
+          <p>
+            copyright ©
+            <strong>대구국비지원 무료교육센터 영진직업전문학교</strong>. All
+            Rights Reserved.
+          </p>
+        </div>
+        <div id="footer_sns">
+          <ul>
+            <li><img src="./images/footer_sns01.png" alt="" /></li>
+            <li><img src="./images/footer_sns02.png" alt="" /></li>
+            <li><img src="./images/footer_sns03.png" alt="" /></li>
+            <li><img src="./images/footer_sns04.png" alt="" /></li>
+            <li><img src="./images/footer_sns05.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <!-- 캐러셀 step3 -->
     <script>
-        $(document).ready(function(){
-          $(".slider").bxSlider({
-            slideWidth:1800,
-            captions:true,
-            auto:true,
-            stopAutoOnclick:true,
-          });
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          slideWidth: 1800,
+          captions: true,
+          auto: true,
+          stopAutoOnclick: true,
         });
-        let tap_btn=document.querySelectorAll('.tap_name');
-        let tapImg=document.querySelectorAll('.tap_img')
-        console.log(tapImg[0]);
-        tap_btn[0].addEventListener('click',function(){
-            tapImg[0].classList.toggle('active')
-            tapImg[1].classList.remove('active')
-        })
-        tap_btn[1].addEventListener('click',function(){
-            tapImg[0].classList.remove('active')
-            tapImg[1].classList.toggle('active')
-        })       
-    
-      </script>
+      });
+      let tap_btn = document.querySelectorAll(".tap_name");
+      let tapImg = document.querySelectorAll(".tap_img");
+      // console.log(!this.classList.contains(active));
+      tap_btn[0].addEventListener("click", function () {
+        // this.style.color='blue'
+        // this.style.borderBottom='2px solid blue'
+        // tap_btn[1].style.color='#333'
+        // tap_btn[1].style.borderBottom=''
+        this.classList.toggle("active");
+        tapImg[0].classList.toggle("active");
+        tapImg[1].classList.remove("active");
+      });
+      tap_btn[1].addEventListener("click", function () {
+        // tap_btn[0].style.color='#333'
+        // tap_btn[0].style.borderBottom=''
+        // this.style.color='blue'
+        // this.style.borderBottom='2px solid blue'
+        this.classList.toggle("active");
+        tapImg[0].classList.remove("active");
+        tapImg[1].classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

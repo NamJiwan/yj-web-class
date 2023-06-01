@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+/* 헤더 부분 */
+header {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+/* header #header_top {
+    border: 1px solid black;
+  } */
+header #header_top #header_gnb ul {
+  /* border: 1px solid black; */
+  /* width: 600px; */
+  text-align: right;
+  padding-right: 5%;
+}
+header #header_top #header_gnb ul li {
+  padding: 4px 11px;
+  line-height: 11px;
+}
+header #header_top #header_gnb ul li a {
+  color: #444;
+  font-size: 11px;
+}
+header #header_bottom {
+  /* border: 1px solid black; */
+  padding-top: 20px;
+}
+header #header_bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #header_bottom #header_lnb ul li {
+  padding: 10px 30px;
+}
+header #header_bottom #header_lnb ul li a {
+  color: #111;
+  font-size: 20px;
+  font-weight: bold;
+}
+header #header_bottom #toggle {
+  display: none;
+}
+header #header_bottom #phone {
+  display: none;
+}
+
+/* 탭메뉴 */
+#contents #class_wrapper .wrapper {
+  padding-top: 170px;
+  /* padding: 20px 0; */
+}
+#contents #class_wrapper .wrapper input {
+  display: none;
+}
+#contents #class_wrapper .wrapper input ~ div {
+  display: none;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(1):checked
+  ~ div:nth-of-type(1) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(2):checked
+  ~ div:nth-of-type(2) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(3):checked
+  ~ div:nth-of-type(3) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(4):checked
+  ~ div:nth-of-type(4) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(5):checked
+  ~ div:nth-of-type(5) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(6):checked
+  ~ div:nth-of-type(6) {
+  display: block;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(7):checked
+  ~ div:nth-of-type(7) {
+  display: block;
+}
+/* 탭모양 구성 */
+#class_wrapper section {
+  overflow: hidden;
+  /* 자식이 float속성을 가질때 부모는 overflow 속성을 가져야함  */
+}
+#class_wrapper section label {
+  display: block;
+  /* label은 공간이 아니므로 박스로 만듬 */
+  float: left;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(1):checked
+  ~ section
+  > label:nth-of-type(1) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(2):checked
+  ~ section
+  > label:nth-of-type(2) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(3):checked
+  ~ section
+  > label:nth-of-type(3) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(4):checked
+  ~ section
+  > label:nth-of-type(4) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(5):checked
+  ~ section
+  > label:nth-of-type(5) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(6):checked
+  ~ section
+  > label:nth-of-type(6) {
+  background: #106aca;
+  color: #fff;
+}
+#contents
+  #class_wrapper
+  .wrapper
+  input:nth-of-type(7):checked
+  ~ section
+  > label:nth-of-type(7) {
+  background: #106aca;
+  color: #fff;
+}
+#class_wrapper .wrapper .class_tap_item {
+  padding: 20px 0;
+  text-align: center;
+}
+#class_wrapper .wrapper .class_tap_item img {
+  width: 100%;
+}
+/* 푸터 */
+footer {
+  background: #333;
+  padding: 20px 0 20px;
+}
+footer .wrapper #footer_top {
+  font-size: 1em;
+  color: #eee;
+  padding-left: 10px;
+  border-bottom: 1px dotted #666;
+}
+footer .wrapper #footer_top ul li {
+  padding: 10px 5px 10px 0;
+}
+footer .wrapper #footer_mid {
+  color: #aaa;
+  margin: 5px 0 0;
+  padding: 0 10px;
+  font-size: 0.875em;
+}
+footer .wrapper #footer_sns {
+  padding: 10px;
+}
+footer .wrapper #footer_sns img {
+  margin: 0 5px 0 0;
+  width: 30px;
+  height: 30px;
+}
