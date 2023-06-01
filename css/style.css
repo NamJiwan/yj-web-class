@@ -18,7 +18,10 @@ a {
 }
 /* 헤더 부분 */
 header {
-  background: #ddd;
+  background: #fff; 
+  position: fixed; 
+  z-index: 999;
+  width: 100%;
 }
 /* header #header_top {
   border: 1px solid black;
@@ -45,6 +48,7 @@ header #header_bottom .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 
 header #header_bottom #header_lnb ul li {
@@ -64,7 +68,7 @@ header #header_bottom #phone {
 
 /* 콘텐츠 부분 */
 #contents {
-  background: #aaa;
+  background: #eee;
 }
 /* 캐러셀 */
 #contents #mainimage_wrapper {
@@ -79,7 +83,7 @@ header #header_bottom #phone {
 
 #contents #class_wrapper {
   
-  background-color: gray;
+  background-color: #eee;
 }
 /* 탭메뉴 */
 #contents #class_wrapper .wrapper{
